@@ -1,0 +1,39 @@
+{
+  "name": "cellularautomata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "langston.js",
+  "type": "module",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "compile": "tsc --w",
+    "test": "jest",
+    "lint": "eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write 'src/**/*.{ts,js,html,css,json}'",
+    "lint:fix": "prettier-eslint --ignore-path .gitignore --write 'src/**/*.{ts,js,html,css,json}'",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "langston"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.10.0",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.3.4",
+    "parcel": "^2.3.2",
+    "prettier": "2.5.1",
+    "prettier-eslint": "^13.0.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{ts,js,html,css,json}": "prettier --write"
+  }
+}

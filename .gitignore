@@ -1,0 +1,14 @@
+
+./node_modules
+node_modules
+yarn.lock
+package-lock.json
+dist
+.husky
+.parcel-cache
+play-play
+.vscode
+babel.config.txt
+utils.txt
+.eslintcache
+.github
