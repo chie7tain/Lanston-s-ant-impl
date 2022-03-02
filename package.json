@@ -5,7 +5,7 @@
   "main": "langston.js",
   "type": "module",
   "scripts": {
-    "start": "parcel src/index.html",
+    "build": "parcel src/index.html",
     "compile": "tsc --w",
     "test": "jest",
     "lint": "eslint --ignore-path .gitignore .",
